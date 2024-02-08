@@ -1,5 +1,5 @@
-Site web one-page intièrement codé from scratch, HTML/CSS vanilla.
+Site web one-page entièrement codé from scratch, HTML/CSS.
 
-Le but est de donner un aperçu de mon expertise de développeur web, sur les langages fondamentaux du FrontEnd.
+Le but est de donner un aperçu de mon expertise d'intégration web, notamment avec les langages fondamentaux Frontend.
 
 Bonne visite 😊
