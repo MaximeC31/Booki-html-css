@@ -35,8 +35,8 @@
 <meta property='twitter:image' content='./images/logo/Booki.png'>
 </head>
 
-<body>
-    <header class='header'>
+<body class='body--primary'>
+    <header class='header--primary'>
         <a href='#'><img class='header__logo' src='./images/logo/Booki.png' alt='logo de Booki'></a>
         <nav>
             <ul class='header__ul'>
@@ -46,22 +46,32 @@
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+    <main class='main--primary'>
+        <section class='main__section--primary'>
+            <h1 class='main__section--primary__h1'>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
-            <form>
-                <i class='fa-solid fa-location-dot'></i>
-                <input type='text' placeholder='Rechercher la destination'>
-                <button type='submit'>Rechercher</button>
+            <form class='main__section--primary__form'>
+                <i class='fa-solid fa-location-dot main--primary__section--primary__form'></i>
+                <input class='main--primary__section--primary__input' type='text'
+                    placeholder='Rechercher la destination'>
+                <button class='main--primary__section--primary__button' type='submit'>Rechercher</button>
             </form>
-            <p>Filtres</p>
-            <ul>
-                <li aria-role='button'><i class='fa-solid fa-money-bill-1-wave'></i>Economique</li>
-                <li aria-role='button'><i class='fa-solid fa-person'></i>Familial</li>
-                <li aria-role='button'><i class='fa-solid fa-heart'></i>Romantique</li>
-                <li aria-role='button'><i class='fa-solid fa-fire'></i>Nos pépites</li>
-            </ul>
+            <div class='main--primary__section--primary__div'>
+                <p class='main--primary__section--primary__div__p'>Filtres</p>
+                <ul class='main--primary__section--primary__div__ul'>
+                    <li class='main--primary__section--primary__div__ul__li' aria-role='button'><i
+                            class='fa-solid fa-money-bill-1-wave main--primary__section--primary__div__ul__li__i'></i>Économique
+                    </li>
+                    <li class='main--primary__section--primary__div__ul__li' aria-role='button'><i
+                            class='fa-solid fa-person main--primary__section--primary__div__ul__li__i'></i>Familial</li>
+                    <li class='main--primary__section--primary__div__ul__li' aria-role='button'><i
+                            class='fa-solid fa-heart main--primary__section--primary__div__ul__li__i'></i>Romantique
+                    </li>
+                    <li class='main--primary__section--primary__div__ul__li' aria-role='button'><i
+                            class='fa-solid fa-fire main--primary__section--primary__div__ul__li__i'></i>Nos pépites
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <section id='hebergements'>
@@ -160,7 +170,7 @@
             <div>
                 <div>
                     <h2>Les plus populaires</h2>
-                    <i class='fas fa-chart-line blue'></i>
+                    <i class='fas fa-chart-line'></i>
                 </div>
                 <article>
                     <a href='#'>
@@ -252,25 +262,25 @@
         </section>
     </main>
 
-    <footer>
-        <div>
-            <p>A propos</p>
-            <ul>
+    <footer class='footer--primary'>
+        <div class='footer__div'>
+            <p class='footer__div__p'>À propos</p>
+            <ul class='footer__div__ul'>
                 <li><a href='#'>Fonctionnement du site</a></li>
                 <li><a href='#'>Conditions générales</a></li>
                 <li><a href='#'>Données et confidentialité</a></li>
             </ul>
         </div>
-        <div>
-            <p>Nos hébergements</p>
-            <ul>
+        <div class='footer__div'>
+            <p class='footer__div__p'>Nos hébergements</p>
+            <ul class='footer__div__ul'>
                 <li><a href='#'>Charte qualité</a></li>
                 <li><a href='#'>Proposer votre hôtel</a></li>
             </ul>
         </div>
-        <div>
-            <p>Assistance</p>
-            <ul>
+        <div class='footer__div'>
+            <p class='footer__div__p'>Assistance</p>
+            <ul class='footer__div__ul'>
                 <li><a href='#'>Centre d'aide</a></li>
                 <li><a href='#'>Nous contacter</a></li>
             </ul>
