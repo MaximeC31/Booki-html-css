@@ -142,6 +142,7 @@ table {
 
 a {
   transition: all 0.5s;
+  color: black;
 }
 
 a:hover {
@@ -149,14 +150,14 @@ a:hover {
   transform: scale(1.05);
 }
 
-.body--primary,
-.main--primary {
+.body--main,
+.main--main {
   display: flex;
   flex-direction: column;
   gap: var(--high);
 }
 
-.header--primary {
+.header--main {
   max-width: 1440px;
   width: calc(100% - (2 * var(--high)));
   margin: auto var(--high);
@@ -171,22 +172,22 @@ a:hover {
   height: auto;
 }
 
-.header__ul {
+.header__nav__list {
   display: flex;
   flex-direction: row;
   gap: var(--high);
 }
 
-.header__list-item {
+.header__nav__item {
   border-top: 2px solid rgba(255, 255, 255, 0);
   padding: var(--medium) 0;
 }
 
-.header__list-item:hover {
+.header__nav__item:hover {
   border-top: 2px solid var(--blue);
 }
 
-.main__section--primary {
+.section__searchfilter {
   display: flex;
   flex-direction: column;
   gap: var(--low);
@@ -195,73 +196,121 @@ a:hover {
   margin: auto var(--high);
 }
 
-.main__section--primary__form {
+.section__searchfilter__title {
+  font-weight: bold;
+}
+
+.section__searchfilter__searchform {
   display: flex;
 }
 
-.main--primary__section--primary__form {
+.section__searchfilter__searchicon {
   padding: var(--low);
   border: 1px solid var(--grey);
   border-radius: var(--low) 0 0 var(--low);
   background-color: var(--grey);
 }
 
-.main--primary__section--primary__input {
+.section__searchfilter__searchinput {
   padding: var(--low);
   border: 1px solid var(--grey);
+  width: 175px;
 }
 
-.main--primary__section--primary__input:not(:placeholder-shown) {
+.section__searchfilter__searchinput:not(:placeholder-shown) {
   font-weight: bold;
 }
 
-.main--primary__section--primary__button {
+.section__searchfilter__searchbutton {
   padding: var(--low);
   background-color: var(--blue);
   border: 1px solid var(--blue);
   border-radius: 0 var(--low) var(--low) 0;
   font-weight: bold;
   color: white;
+  cursor: pointer;
 }
 
-.main--primary__section--primary__div {
+.section__searchfilter__filter {
   display: flex;
   flex-direction: row;
   gap: var(--low);
   align-items: center;
 }
 
-.main--primary__section--primary__div__p {
+.section__searchfilter__filtertitle {
   font-weight: bold;
 }
 
-.main--primary__section--primary__div__ul {
+.section__searchfilter__filterlist {
   display: flex;
   flex-direction: row;
   gap: var(--low);
 }
 
-.main--primary__section--primary__div__ul__li {
+.section__searchfilter__filteritem {
   border: 2px solid var(--grey);
   border-radius: 30px;
   padding: 10px 15px;
   margin-right: 0px;
   transition: all 0.5s;
+  cursor: pointer;
 }
 
-.main--primary__section--primary__div__ul__li:hover {
+.section__searchfilter__filteritem:hover {
   cursor: pointer;
   background-color: var(--lightblue);
   border: 2px solid var(--lightblue);
   transform: scale(1.05);
 }
 
-.main--primary__section--primary__div__ul__li__i {
+.section__searchfilter__filtericon {
   color: blue;
   margin-right: 10px;
 }
 
-.footer--primary {
+.section__activite {
+  display: flex;
+  flex-direction: column;
+  gap: var(--medium);
+  max-width: 1440px;
+  width: calc(100% - (2 * var(--medium)));
+  margin: auto var(--medium);
+}
+
+.section__activite__title {
+  font-weight: bold;
+}
+
+.section__activite__itemcontainer {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.section__activite__item {
+  box-shadow: 0px 0px 5px 5px var(--grey);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.section__activite__item:hover {
+  transform: scale(1.05);
+}
+
+.section__activite__img {
+  width: 100%;
+  height: 375px;
+  object-fit: cover;
+}
+
+.section__activite__subtitle {
+  padding: 20px 10px;
+}
+
+.footer--main {
   max-width: 1440px;
   margin: auto var(--high);
   display: flex;
@@ -271,14 +320,13 @@ a:hover {
   background-color: var(--grey);
 }
 
-.footer__div,
-.footer__div__ul {
+.footer__col,
+.footer__list {
   display: flex;
   flex-direction: column;
   gap: var(--low);
 }
 
-.footer__div__p,
-.main__section--primary__h1 {
+.footer__title {
   font-weight: bold;
 }

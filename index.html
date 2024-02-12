@@ -8,67 +8,65 @@
     <meta name='author' content='Maxime CHAMPIGNEUX'>
     <meta name='copyright' content='Maxime CHAMPIGNEUX'>
 
+    <meta name='robots' content='index, follow'>
+    <!-- <link rel='canonical' href=''> -->
+    <title>Booki, Location d'hébergements de vacances</title>
+    <meta name='description' content="Nous vous proposons la locaton d'hébergements de vacances pour une expérience
+        paradisiaque">
+
+    <meta property='og:type' content='website'>
+    <meta property='og:title' content="Booki, Location d'hébergements de vacances">
+    <meta property='og:description' content="Nous vous proposons la locaton d'hébergements de vacances pour une
+        expérience paradisiaque">
+    <meta property='og:image' content='./images/logo/Booki.png'>
+
+    <meta property='twitter:card' content='summary_large_image'>
+    <meta property='twitter:title' content="Booki, Location d'hébergements de vacances">
+    <meta property='twitter:description' content="Nous vous proposons la locaton d'hébergements de vacances pour une
+        expérience paradisiaque">
+    <meta property='twitter:image' content='./images/logo/Booki.png'>
+
     <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0'>
     <link rel='shortcut icon' href='./images/logo/Booki.png' type='image/png'>
-    <link rel='stylesheet' href='./css/style.css'>
-    <script src="https://kit.fontawesome.com/2f6094b199.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet"
+    <script async src="https://kit.fontawesome.com/2f6094b199.js" crossorigin="anonymous"></script>
+    <link rel="preload" as='style' onload='this.rel="stylesheet"' href='./css/style.css'>
+    <link rel="preload" as='style' onload='this.rel="stylesheet"'
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap">
 </head>
 
-<meta name='robots' content='index, follow'>
-<link rel='canonical' href='#'>
-<title>Booki, Location d'hébergements de vacances</title>
-<meta name='description' content="Nous vous proposons la locaton d'hébergements de vacances pour une expérience
-        paradisiaque">
-
-<meta property='og:type' content='website'>
-<meta property='og:title' content="Booki, Location d'hébergements de vacances">
-<meta property='og:description' content="Nous vous proposons la locaton d'hébergements de vacances pour une
-        expérience paradisiaque">
-<meta property='og:image' content='./images/logo/Booki.png'>
-
-<meta property='twitter:card' content='summary_large_image'>
-<meta property='twitter:title' content="Booki, Location d'hébergements de vacances">
-<meta property='twitter:description' content="Nous vous proposons la locaton d'hébergements de vacances pour une
-        expérience paradisiaque">
-<meta property='twitter:image' content='./images/logo/Booki.png'>
-</head>
-
-<body class='body--primary'>
-    <header class='header--primary'>
+<body class='body--main'>
+    <header class='header--main'>
         <a href='#'><img class='header__logo' src='./images/logo/Booki.png' alt='logo de Booki'></a>
         <nav>
-            <ul class='header__ul'>
-                <li class='header__list-item'><a href='#hebergements'>Hébergements</a></li>
-                <li class='header__list-item'><a href='#activites'>Activités</a></li>
+            <ul class='header__nav__list'>
+                <li class='header__nav__item'><a href='#hebergements'>Hébergements</a></li>
+                <li class='header__nav__item'><a href='#activites'>Activités</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class='main--primary'>
-        <section class='main__section--primary'>
-            <h1 class='main__section--primary__h1'>Trouvez votre hébergement pour des vacances de rêve</h1>
+    <main class='main--main'>
+        <section class='section__searchfilter'>
+            <h1 class='section__searchfilter__title'>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
-            <form class='main__section--primary__form'>
-                <i class='fa-solid fa-location-dot main--primary__section--primary__form'></i>
-                <input class='main--primary__section--primary__input' type='text'
-                    placeholder='Rechercher la destination'>
-                <button class='main--primary__section--primary__button' type='submit'>Rechercher</button>
+            <form class='section__searchfilter__searchform'>
+                <i class='fa-solid fa-location-dot section__searchfilter__searchicon'></i>
+                <input class='section__searchfilter__searchinput' type='text' placeholder='Rechercher la destination'>
+                <button class='section__searchfilter__searchbutton' type='submit'>Rechercher</button>
             </form>
-            <div class='main--primary__section--primary__div'>
-                <p class='main--primary__section--primary__div__p'>Filtres</p>
-                <ul class='main--primary__section--primary__div__ul'>
-                    <li class='main--primary__section--primary__div__ul__li' aria-role='button'><i
-                            class='fa-solid fa-money-bill-1-wave main--primary__section--primary__div__ul__li__i'></i>Économique
+            <div class='section__searchfilter__filter'>
+                <p class='section__searchfilter__filtertitle'>Filtres</p>
+                <ul class='section__searchfilter__filterlist'>
+                    <li class='section__searchfilter__filteritem' role='button'><i
+                            class='fa-solid fa-money-bill-1-wave section__searchfilter__filtericon'></i>Économique
                     </li>
-                    <li class='main--primary__section--primary__div__ul__li' aria-role='button'><i
-                            class='fa-solid fa-person main--primary__section--primary__div__ul__li__i'></i>Familial</li>
-                    <li class='main--primary__section--primary__div__ul__li' aria-role='button'><i
-                            class='fa-solid fa-heart main--primary__section--primary__div__ul__li__i'></i>Romantique
+                    <li class='section__searchfilter__filteritem' role='button'><i
+                            class='fa-solid fa-person section__searchfilter__filtericon'></i>Familial</li>
+                    <li class='section__searchfilter__filteritem' role='button'><i
+                            class='fa-solid fa-heart section__searchfilter__filtericon'></i>Romantique
                     </li>
-                    <li class='main--primary__section--primary__div__ul__li' aria-role='button'><i
-                            class='fa-solid fa-fire main--primary__section--primary__div__ul__li__i'></i>Nos pépites
+                    <li class='section__searchfilter__filteritem' role='button'><i
+                            class='fa-solid fa-fire section__searchfilter__filtericon'></i>Nos pépites
                     </li>
                 </ul>
             </div>
@@ -230,62 +228,66 @@
             </div>
         </section>
 
-        <section id='activites'>
-            <h2>Activités à Marseille</h2>
-            <div>
-                <article>
+        <section id='activites' class='section__activite'>
+            <h2 class='section__activite__title'>Activités à Marseille</h2>
+            <div class='section__activite__itemcontainer'>
+                <article class='section__activite__item'>
                     <a href='#'>
-                        <img src='./images/activites/reno-laithienne.jpg' alt='le vieux-port Marseille'>
-                        <h3>Vieux-Port</h3>
+                        <img class='section__activite__img' src='./images/activites/reno-laithienne.jpg'
+                            alt='le vieux-port Marseille'>
+                        <h3 class='section__activite__subtitle'>Vieux-Port</h3>
                     </a>
                 </article>
-                <article>
+                <article class='section__activite__item'>
                     <a href='#'>
-                        <img src='./images/activites/paul-hermann.jpg' alt='fort de pomègues Marseille'>
-                        <h3>Fort de Pomègues</h3>
+                        <img class='section__activite__img' src='./images/activites/paul-hermann.jpg'
+                            alt='fort de pomègues Marseille'>
+                        <h3 class='section__activite__subtitle'>Fort de Pomègues</h3>
                     </a>
                 </article>
-                <article>
+                <article class='section__activite__item'>
                     <a href='#'>
-                        <img src='./images/activites/kilyan-sockalingum.jpg'
+                        <img class='section__activite__img' src='./images/activites/kilyan-sockalingum.jpg'
                             alt='parc national des calanques Marseille'>
-                        <h3>Parc National des Calanques</h3>
+                        <h3 class='section__activite__subtitle'>Parc National des Calanques</h3>
                     </a>
                 </article>
-                <article>
+                <article class='section__activite__item'>
                     <a href='#'>
-                        <img src='./images/activites/florian-wehde.jpg' alt='notre dame de la garde Marseille'>
-                        <h3>Notre-Dame-de-la-Garde</h3>
+                        <img class='section__activite__img' src='./images/activites/florian-wehde.jpg'
+                            alt='notre dame de la garde Marseille'>
+                        <h3 class='section__activite__subtitle'>Notre-Dame-de-la-Garde</h3>
                     </a>
                 </article>
             </div>
         </section>
     </main>
 
-    <footer class='footer--primary'>
-        <div class='footer__div'>
-            <p class='footer__div__p'>À propos</p>
-            <ul class='footer__div__ul'>
+    <footer class='footer--main'>
+        <div class='footer__col'>
+            <p class='footer__title'>À propos</p>
+            <ul class='footer__list'>
                 <li><a href='#'>Fonctionnement du site</a></li>
                 <li><a href='#'>Conditions générales</a></li>
                 <li><a href='#'>Données et confidentialité</a></li>
             </ul>
         </div>
-        <div class='footer__div'>
-            <p class='footer__div__p'>Nos hébergements</p>
-            <ul class='footer__div__ul'>
+        <div class='footer__col'>
+            <p class='footer__title'>Nos hébergements</p>
+            <ul class='footer__list'>
                 <li><a href='#'>Charte qualité</a></li>
                 <li><a href='#'>Proposer votre hôtel</a></li>
             </ul>
         </div>
-        <div class='footer__div'>
-            <p class='footer__div__p'>Assistance</p>
-            <ul class='footer__div__ul'>
+        <div class='footer__col'>
+            <p class='footer__title'>Assistance</p>
+            <ul class='footer__list'>
                 <li><a href='#'>Centre d'aide</a></li>
                 <li><a href='#'>Nous contacter</a></li>
             </ul>
         </div>
     </footer>
+
 </body>
 
 </html>
