@@ -1,160 +1,44 @@
 :root {
-  --blue: #0065fc;
-  --lightblue: #deebff;
+  --transparent: rgba(0, 0, 0, 0);
+  --white: #ffffff;
   --grey: #f2f2f2;
-  --high: 60px;
-  --medium: 30px;
-  --low: 15px;
+  --black: #000000;
+  --lightblue: #deebff;
+  --blue: #0065fc;
+
+  --spacing-xxxl: 256px;
+  --spacing-xxl: 128px;
+  --spacing-xl: 64px;
+  --spacing-lg: 32px;
+  --spacing-md: 16px;
+  --spacing-sm: 8px;
+  --spacing-xs: 4px;
+  --spacing-xxs: 2px;
+  --spacing-xxxs: 1px;
+
+  --element-xxxl: 32px;
+  --element-xxl: 28px;
+  --element-xl: 24px;
+  --element-lg: 20px;
+  --element-md: 16px;
+  --element-sm: 12px;
+  --element-xs: 8px;
+  --element-xxs: 4px;
+  --element-xxxs: 1px;
+
+  --max-width-desktop: 1440px;
+  --max-width-tablet: 1023px;
+  --max-width-smartphone: 767px;
+
+  --min-width-desktop: 1024px;
+  --min-width-table: 768px;
+  --min-width-smartphone: 320px;
 }
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  text-decoration: none;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-  font-family: 'Raleway', sans-serif;
-  font-weight: normal;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-a {
-  transition: all 0.5s;
-  color: black;
-}
-
-a:hover {
-  color: var(--blue);
-  transform: scale(1.05);
-}
-
-.body--main,
 .main--main {
   display: flex;
   flex-direction: column;
-  gap: var(--high);
+  gap: var();
 }
 
 .header--main {
@@ -261,7 +145,7 @@ a:hover {
   cursor: pointer;
   background-color: var(--lightblue);
   border: 2px solid var(--lightblue);
-  transform: scale(1.05);
+  transform: scale(100%);
 }
 
 .section__searchfilter__filtericon {
@@ -297,7 +181,7 @@ a:hover {
 }
 
 .section__activite__item:hover {
-  transform: scale(1.05);
+  transform: scale(100%);
 }
 
 .section__activite__img {
